@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualLabsSTEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6AF36A;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header-menu-container {
+            background-color: #008B00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 80px;
+        }
+
+        .header {
+            color: white;
+            font-size: 36px;
+            font-weight: bold; /* Жирный шрифт для заголовка */
+            margin-right: 30px; /* Отступ для заголовка */
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center; /* Центрирование элементов меню */
+            width: 100%; /* Ширина контейнера меню */
+            margin-left: -250px; /* Отрицательный отступ слева */
+        }
+
+        .menu a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px; /* Размер шрифта такой же, как у заголовка */
+            font-weight: bold; /* Жирный шрифт */
+            font-style: italic; /* Курсив */
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .bubble {
+            width: 250px;
+            background-color: #00A000;
+            color: white;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .bubble p {
+            font-size: 18px; /* Увеличить размер шрифта на 2px */
+            font-weight: bold; /* Сделать шрифт жирнее */
+        }
+
+        .center-image {
+            width: 910px; /* Увеличить ширину картинки */
+            height: auto;
+            grid-column: span 2;
+            justify-self: center;
+            margin-top: -40px; /* Поднять картинку выше */
+            margin-left: 50px; /* Сместить картинку вправо */
+        }
+
+        .bubble-integration {
+            grid-column: 1 / span 1;
+            margin-top: 100px; /* Вертикальный отступ для пузыря */
+            margin-left: 50px; /* Сместить пузырь правее */
+        }
+
+        .bubble-creative {
+            grid-column: 2 / span 1;
+            margin-top: 100px; /* Вертикальный отступ для пузыря */
+            margin-left: 550px;
+        }
+
+        .bubble-practical {
+            grid-column: 1 / span 1;
+            grid-row: 3; /* Указать строку для пузыря */
+            margin-top: 10px; /* Вертикальный отступ для пузыря */
+            margin-left: 50px; /* Сместить пузырь правее */
+        }
+
+        .bubble-future {
+            grid-column: 2 / span 1;
+            grid-row: 3; /* Указать строку для пузыря */
+            margin-top: 10px; /* Вертикальный отступ для пузыря */
+            margin-left: 550px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-menu-container">
+        <div class="header">VirtualLabsSTEM</div>
+        <div class="menu">
+            <a href="2.html">о проекте</a>
+            <a href="#">STEM</a>
+            <a href="4.html">для учителей</a>
+            <a href="5.html">для учеников</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="bubble bubble-integration">
+            <p>Интеграция дисциплин: STEM-обучение объединяет науку, технологии, инженерию и математику, помогая ученикам увидеть взаимосвязь этих предметов.</p>
+        </div>
+
+        <div class="bubble bubble-creative">
+            <p>Креативное и критическое мышление: Ученики учатся искать решения реальных проблем, развивают навыки анализа и творчества.</p>
+        </div>
+
+        <div class="bubble bubble-practical">
+            <p>Практическое обучение: Большое внимание уделяется лабораторным исследованиям, проектной работе, моделированию и экспериментам.</p>
+        </div>
+
+        <img src="images/STEM.jpg" alt="STEM Logo" class="center-image" usemap="#image-map">
+
+        <div class="bubble bubble-future">
+            <p>Подготовка к будущим профессиям: STEM-образование помогает подготовить учеников к работе в высокотехнологичных и инженерных областях, где востребованы знания из этих дисциплин.</p>
+        </div>
+    </div>
+
+    <map name="image-map">
+        <!-- Определение кликабельной области -->
+        <area shape="rect" coords="38,239,238,442" alt="STEM Logo" href="https://www.ed.gov/about/ed-initiatives/you-belong-stem" target="_blank">
+        <area shape="rect" coords="247,238,449,443" alt="STEM Logo" href="https://www.timeshighereducation.com/" target="_blank">
+        <area shape="rect" coords="456,239,662,440" alt="STEM Logo" href="https://tryengineering.org/" target="_blank">
+        <area shape="rect" coords="667,239,870,442" alt="STEM Logo" href="https://www.nctm.org/Standards-and-Positions/Position-Statements/Building-STEM-Education-on-a-Sound-Mathematical-Foundation/" target="_blank">
+    </map>
+</body>
+</html>

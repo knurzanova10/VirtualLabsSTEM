@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualLabsSTEM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b3a52;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header-container {
+            background-color: #41a9f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 80px;
+        }
+        .header-title {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .nav-container {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 200px;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px; /* Увеличенный размер текста */
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #193441;
+            padding: 40px 20px;
+            min-height: 400px;
+            flex-grow: 1;
+        }
+        .container-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .container-text p {
+            color: white;
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: left;
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+        }
+        .container-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-image img {
+            width: 100%;
+            height: auto;
+            max-height: 500px; /* Увеличенное ограничение высоты картинки */
+            object-fit: contain; /* Сохранение пропорций картинки */
+            margin-top: 100px; /* Опускаем картинку на 100 пикселей */
+        }
+        .footer {
+            background-color: #41a9f2;
+            text-align: center;
+            color: white;
+            padding: 15px 0;
+            font-size: 28px; /* Увеличенный размер текста */
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+            margin-top: auto; /* Это заставит футер оставаться внизу */
+        }
+
+        /* Медиа-запросы для адаптивного дизайна */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Вертикальное расположение на маленьких экранах */
+            }
+            .container-text p {
+                font-size: 16px;
+            }
+            .container-image img {
+                width: 100%;
+                height: auto;
+                max-height: 500px; /* Увеличенное ограничение высоты картинки */
+                margin-top: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container-text p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header-title">
+            VirtualLabsSTEM
+        </div>
+        <div class="nav-container">
+            <div class="nav">
+                <a href="#">о проекте</a>
+                <a href="3.html">STEM</a>
+                <a href="4.html">для учителей</a>
+                <a href="5.html">для учеников</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-text">
+            <p>Виртуальные лаборатории играют значительную роль в образовании по STEM-направлениям (наука, технологии, инженерия и математика), предоставляя учащимся возможность проводить эксперименты и исследования в интерактивной и безопасной среде. С их помощью ученики могут изучать различные научные дисциплины, выполнять практические задания и развивать навыки работы с технологиями.</p>
+            <p>Благодаря виртуальным лабораториям учащиеся получают доступ к широкому спектру оборудования и инструментов, которые могут быть недоступны в обычных классах или учебных заведениях. Это позволяет им более глубоко понять материал, развить критическое мышление и применить полученные знания на практике.</p>
+            <p>Кроме того, виртуальные лаборатории способствуют улучшению доступности образования, позволяя учащимся из разных стран и регионов изучать STEM-дисциплины без необходимости физического присутствия в учебном заведении. Это особенно актуально в условиях пандемии, когда ограничены возможности для проведения лабораторных работ в учебных заведениях.</p>
+             <p>Виртуальные лаборатории также способствуют развитию навыков самостоятельного обучения и исследовательской деятельности. Учащиеся могут экспериментировать с различными параметрами и условиями, что помогает им лучше понять причинно-следственные связи и научные законы. Это особенно важно для формирования научного мышления и подготовки к дальнейшему обучению и профессиональной деятельности.</p>
+<p>Интерактивные элементы виртуальных лабораторий делают процесс обучения более увлекательным и запоминающимся. Использование анимаций, симуляций и визуализаций помогает учащимся лучше усваивать сложные концепции и явления. Это особенно полезно для визуальных и кинестетических учеников, которые лучше воспринимают информацию через зрительные и тактильные ощущения.</p>
+<p>Виртуальные лаборатории также предоставляют учителям и преподавателям новые инструменты для создания интерактивных и динамичных уроков. Они могут использовать виртуальные лаборатории для демонстрации сложных экспериментов, которые трудно или невозможно провести в реальных условиях. Это позволяет учителям более эффективно объяснять материал и вовлекать учащихся в активное обучение.</p>
+<p>Виртуальные лаборатории также играют важную роль в подготовке учащихся к будущему. В условиях быстрого развития технологий и цифровизации образования, владение навыками работы с виртуальными инструментами становится все более востребованным. </p>
+        </div>
+        <div class="container-image">
+            <img src="images/виртуальные лаборатории1.jpg" alt="виртуальные лаборатории">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="6.html" style="color: white; text-decoration: none;">Виртуальные лаборатории</a>
+    </div>
+
+</body>
+</html>

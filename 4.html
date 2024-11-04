@@ -1,0 +1,252 @@
+﻿<html lang="ru">
+<head>
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методические рекомендации</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0076be;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e3555;
+        }
+
+        nav {
+            background-color: #00a3e0; /* Цвет голубой линии */
+            padding: 20px 0; /* Высота полосы */
+            margin: -20px -20px 20px; /* Уменьшил отрицательный отступ по вертикали */
+            width: calc(100% + 40px); /* Ширина полосы */
+            border-radius: 10px; /* Закругление краёв */
+            position: relative; /* Добавлено для позиционирования */
+            left: 0; /* Сдвиг влево для покрытия синего фона */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Центрирование элементов меню */
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li:first-child a {
+            font-size: 24px; /* Увеличение шрифта */
+            font-weight: bold; /* Сделать шрифт жирнее */
+            position: absolute; /* Абсолютное позиционирование */
+            left: 20px; /* Сдвиг влево */
+        }
+
+        nav ul li:nth-child(2) a,
+        nav ul li:nth-child(3) a,
+        nav ul li:nth-child(4) a,
+        nav ul li:nth-child(5) a {
+            font-style: italic; /* Курсив */
+            font-weight: bold; /* Жирный шрифт */
+            font-size: 20px; /* Увеличение шрифта */
+        }
+
+        .content {
+            background-color: #1e3555;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic; /* Курсив */
+        }
+
+        .content p {
+            text-align: center;
+            font-size: 18px; /* Увеличенный размер шрифта */
+            margin-bottom: 20px;
+        }
+
+        .platforms {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .platforms img {
+            width: 120px; /* Увеличенный размер картинок */
+            height: auto;
+        }
+
+        .recommendations {
+            background-color: #264a67;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .recommendations ul li {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .info-block {
+            background-color: #00a3e0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info-block h3 {
+            font-size: 24px; /* Увеличенный размер текста */
+            font-weight: bold;
+            color: pink; /* Розовый цвет */
+        }
+
+        .collaboration, .testing {
+            background-color: #264a67;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .collaboration h3, .testing h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .collaboration p, .testing p {
+            font-size: 16px;
+        }
+
+        .testing img {
+            display: block;
+            margin: 20px auto;
+            width: 200px; /* Увеличенный размер картинки */
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #00a3e0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: -20px -20px 0; /* Уменьшил отрицательный отступ по вертикали */
+            width: calc(100% + 40px); /* Ширина полосы */
+            position: relative; /* Добавлено для позиционирования */
+            left: 0; /* Сдвиг влево для покрытия синего фона */
+            top: 20px; /* Опустить ниже */
+        }
+
+        footer h3 {
+            font-size: 20px;
+        }
+
+        .white-link {
+            color: #fff; /* Белый цвет */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">VirtualLabsSTEM</a></li>
+                    <li><a href="2.html">О проекте</a></li>
+                    <li><a href="3.html">STEM</a></li>
+                    <li><a href="#">Для учителей</a></li>
+                    <li><a href="5.html">Для учеников</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h2>Методические рекомендации</h2>
+            <p>Внедрение виртуальных лабораторий в учебный процесс может значительно повысить интерес и успеваемость учеников, особенно в STEM-дисциплинах. Вот ключевые рекомендации для учителей:<br>Изучите доступные методические рекомендации,котоорые предлагает платформа</p>
+
+            <div class="platforms">
+                <img src="images/phet.png" alt="PHET" usemap="#phet-map">
+                <img src="images/physics.png" alt="Физика" usemap="#physics-map">
+                <img src="images/scratch.png" alt="Scratch" usemap="#scratch-map">
+                <img src="images/tinkercad.png" alt="TinkerCAD" usemap="#tinkercad-map">
+            </div>
+
+            <div class="recommendations">
+                <ul>
+                    <li><strong>Выбор задач, соответствующих программе:</strong> Определите, какие разделы учебного плана лучше всего подходят для виртуальных экспериментов. Например, используйте симуляции для сложных тем, которые трудно воспроизвести в реальной лаборатории.</li>
+                    <li><strong>Реализация с оценкой знаний:</strong> Используйте виртуальные лаборатории как часть домашней работы или оценочных мероприятий, чтобы проверить понимание пройденного материала.</li>
+                </ul>
+            </div>
+
+            <div class="info-block">
+                <h3>В виртуальных лабораториях на практике возможно изучить все разделы физики!</h3>
+            </div>
+
+            <div class="collaboration">
+                <h3>Коллаборация и рефлексия:</h3>
+                <p>Проводите обсуждения результатов виртуальных экспериментов в классе, где ученики смогут поделиться своим опытом и наблюдениями. Это помогает закрепить знания и улучшить понимание.</p>
+            </div>
+
+            <div class="testing">
+                <h3>Тестирование и оценка:</h3>
+                <p>Виртуальные лаборатории часто предоставляют инструменты для автоматической оценки результатов, что помогает учителю эффективно проверять знания учеников.</p>
+                <img src="images/feedback.jpg" alt="Кунделик" usemap="#kundelik-map">
+            </div>
+        </div>
+
+        <footer>
+            <h3><a href="file:///E:/VirtualLabsSTEM/6.html" class="white-link">Виртуальные лаборатории</a></h3>
+        </footer>
+    </div>
+
+    <map name="phet-map">
+        <!-- Определение кликабельной области для PHET -->
+        <area shape="rect" coords="0,0,200,200" alt="PHET" href="https://phet.colorado.edu/" target="_blank">
+    </map>
+
+    <map name="physics-map">
+        <!-- Определение кликабельной области для Физика -->
+        <area shape="rect" coords="0,0,200,200" alt="Физика" href="http://physion.net/" target="_blank">
+    </map>
+
+    <map name="scratch-map">
+        <!-- Определение кликабельной области для Scratch -->
+        <area shape="rect" coords="0,0,200,200" alt="Scratch" href="https://scratch.mit.edu/" target="_blank">
+    </map>
+
+    <map name="tinkercad-map">
+        <!-- Определение кликабельной области для TinkerCAD -->
+        <area shape="rect" coords="0,0,200,200" alt="TinkerCAD" href="https://www.tinkercad.com/" target="_blank">
+    </map>
+
+    <map name="kundelik-map">
+        <!-- Определение кликабельной области для Kundelik -->
+        <area shape="rect" coords="0,0,200,200" alt="Kundelik" href="https://kundelik.kz/userfeed" target="_blank">
+    </map>
+</body>
+</html>

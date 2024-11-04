@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualLabsSTEM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:  #0b3a52;
+            color: white;
+        }
+
+        .header-container {
+            background-color: #41a9f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 80px;
+        }
+
+        .header-title {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 200px;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px; /* Увеличенный размер текста */
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .intro, .stem-connection, .stem-details, footer {
+            margin-bottom: 30px;
+        }
+
+        .intro img {
+             width: 300px; /* Увеличенный размер изображения */
+    margin-left: 750px; /* Отступ слева для переноса изображения правее */
+    margin-right: 15px;
+        }
+
+        .stem-connection img, .partners img {
+            width: 300px;
+            margin-left: 750px;
+            margin-right: 15px;
+        }
+
+        .stem-connection h2, .stem-details h3 {
+            color: #f7f21a;
+        }
+
+        .stem-item {
+            background-color: #193441;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .partners img {
+            width: 100px; /* Увеличенный размер изображения */
+            height: auto; /* Сохранение пропорций */
+            margin: 10px;
+        }
+
+        .large-text {
+            font-size: 20px; /* Увеличенный размер текста */
+        }
+
+        footer .large-text {
+            color: white; /* Измененный цвет текста */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-title">
+            VirtualLabsSTEM
+        </div>
+        <div class="nav-container">
+            <div class="nav">
+                <a href="2.html">о проекте</a>
+                <a href="3.html">STEM</a>
+                <a href="4.html">для учителей</a>
+                <a href="5.html">для учеников</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="intro">
+            <p class="large-text"><em><b>Виртуальные лаборатории – это интерактивные онлайн-платформы или программные средства, позволяющие проводить эксперименты и моделировать различные процессы в цифровой среде. Они имитируют реальное оборудование и условия, позволяя пользователям исследовать научные явления и проводить эксперименты без физического присутствия в лаборатории. Виртуальные лаборатории широко применяются в учебных целях, особенно в естественных науках, таких как физика, химия и биология.</b></em></p>
+            <img src="images/виртуальные лаборатории1.jpg" alt="виртуальные лаборатории">
+        </section>
+
+        <section class="stem-connection">
+            <h2>Связь виртуальных лабораторий со STEM-технологиями</h2>
+            <p class="large-text"><em><b>STEM (Science, Technology, Engineering, Mathematics) – наука, технологии, инженерия и математика. Виртуальные лаборатории способствуют обучению через интеграцию научных знаний и технологий в рамках STEM-подхода.</em></b></p>
+            <img src="images/STEM.jpg" alt="STEM Logo">
+        </section>
+
+        <section class="stem-details">
+            <div class="stem-item">
+                <h3>Наука (S)</h3>
+                <p class="large-text"><em><b>Виртуальные лаборатории помогают ученикам лучше понять фундаментальные научные концепции через моделирование экспериментов.</em></b></p>
+            </div>
+            <div class="stem-item">
+                <h3>Технологии (T)</h3>
+                <p class="large-text"><em><b>Использование цифровых платформ и программного обеспечения для проведения экспериментов является неотъемлемой частью виртуальных лабораторий.</em></b></p>
+            </div>
+            <div class="stem-item">
+                <h3>Инженерия (E)</h3>
+                <p class="large-text"><em><b>Виртуальные лаборатории могут использоваться для разработки и тестирования инженерных решений и устройств.</em></b></p>
+            </div>
+            <div class="stem-item">
+                <h3>Математика (M)</h3>
+                <p class="large-text"><em><b>Эксперименты, проводимые в виртуальных лабораториях, могут включать моделирование данных, расчет результатов и анализ, что требует математической обработки.</em></b></p>
+            </div>
+        </section>
+
+        <footer>
+           <p class="large-text"><em><b>Виртуальные лаборатории способствуют междисциплинарному обучению, обеспечивая интеграцию различных компонентов STEM и предлагая возможность взаимодействовать с наукой, не выходя за рамки цифровой среды.</em></b></p>
+           <div class="partners">
+                <a href="https://phet.colorado.edu/" target="_blank">
+                    <img src="images/phet.png" alt="PHET" style="width: 300px; height: auto;" />
+                </a>
+                <a href="https://physion.net/" target="_blank">
+                    <img src="images/physics.png" alt="Физика" style="width: 300px; height: auto;" />
+                </a>
+                <a href="https://scratch.mit.edu/" target="_blank">
+                    <img src="images/scratch.png" alt="Scratch" style="width: 300px; height: auto;" />
+                </a>
+                <a href="https://www.tinkercad.com/" target="_blank">
+                    <img src="images/tinkercad.png" alt="TinkerCAD" style="width: 300px; height: auto;" />
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

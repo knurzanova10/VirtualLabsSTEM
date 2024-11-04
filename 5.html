@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методические рекомендации</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #98FB98; /* Светло-зеленый (Pale Green) */
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #98FB98; /* Светло-зеленый (Pale Green) */
+        }
+
+        nav {
+            background-color: #006600; /* Темно-зеленый */
+            padding: 20px 0; /* Высота полосы */
+            margin: -20px -20px 20px; /* Уменьшил отрицательный отступ по вертикали */
+            width: calc(100% + 40px); /* Ширина полосы */
+            border-radius: 10px; /* Закругление краёв */
+            position: relative; /* Добавлено для позиционирования */
+            left: 0; /* Сдвиг влево для покрытия синего фона */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Центрирование элементов меню */
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li:first-child a {
+            font-size: 24px; /* Увеличение шрифта */
+            font-weight: bold; /* Сделать шрифт жирнее */
+            position: absolute; /* Абсолютное позиционирование */
+            left: 20px; /* Сдвиг влево */
+        }
+
+        nav ul li:nth-child(2) a,
+        nav ul li:nth-child(3) a,
+        nav ul li:nth-child(4) a,
+        nav ul li:nth-child(5) a {
+            font-style: italic; /* Курсив */
+            font-weight: bold; /* Жирный шрифт */
+            font-size: 20px; /* Увеличение шрифта */
+        }
+
+        .content {
+            background-color: #98FB98; /* Светло-зеленый (Pale Green) */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic; /* Курсив */
+            color: #000; /* Черный цвет */
+            margin-top: -20px; /* Поднять заголовок чуть повыше */
+        }
+
+        .content p {
+            text-align: center;
+            font-size: 18px; /* Увеличенный размер шрифта */
+            margin-bottom: 20px;
+            color: #000; /* Черный цвет */
+        }
+
+        .platforms-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .platforms-container p {
+            margin-right: 20px;
+        }
+
+        .platforms {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .platforms img {
+            width: 150px; /* Уменьшенный размер картинок */
+            height: auto;
+        }
+
+        .recommendations {
+            background-color: #006600; /* Темно-зеленый */
+            padding: 10px; /* Уменьшенный отступ */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: relative; /* Добавлено для позиционирования */
+        }
+
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Добавлено для горизонтального выравнивания */
+            justify-content: space-around; /* Равномерное распределение элементов */
+            align-items: center; /* Вертикальное выравнивание элементов */
+        }
+
+        .recommendations ul li {
+            margin-bottom: 15px;
+            font-size: 5px;
+        }
+
+        .recommendations ul li img {
+            width: 150px; /* Уменьшенный размер изображений */
+            height: auto;
+            margin-top: 20px; /* Добавлен отступ сверху для изображений */
+        }
+
+        .info-block {
+            background-color: #006600; /* Темно-зеленый */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-block h3 {
+            font-size: 24px; /* Увеличенный размер текста */
+            font-weight: bold;
+            color: pink; /* Розовый цвет */
+            margin-right: 20px; /* Отступ справа от текста */
+            font-style: italic; /* Курсив */
+            margin-left: 10px; /* Сдвиг влево */
+        }
+
+        .info-block img {
+            width: 250px; /* Увеличенный размер картинки */
+            height: auto;
+            position: relative; /* Добавлено для позиционирования */
+            left: -40px; /* Сдвиг влево */
+        }
+
+        .collaboration, .testing {
+            background-color: #006600; /* Темно-зеленый */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .collaboration h3, .testing h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .collaboration p, .testing p {
+            font-size: 16px;
+        }
+
+        .testing img {
+            width: 200px; /* Увеличенный размер картинки */
+            height: auto;
+            margin-left: 20px; /* Отступ слева от текста */
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-container p {
+            margin-right: 20px;
+            color: #000; /* Черный цвет */
+        }
+
+        .footer-container p.shift-right {
+            margin-left: 200px; /* Сдвиг вправо */
+        }
+
+        .footer-container p.large-font {
+            font-size: 25px; /* Увеличенный размер шрифта */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #006600; /* Темно-зеленый */
+            padding: 10px; /* Уменьшенный отступ */
+            border-radius: 10px;
+            margin: 0; /* Уменьшил отрицательный отступ по вертикали */
+            width: auto; /* Ширина полосы */
+            position: relative; /* Добавлено для позиционирования */
+            left: 10px; /* Сдвиг вправо */
+            top: -8px; /* Поднять вверх */
+        }
+
+        footer h3 {
+            font-size: 20px;
+        }
+
+        .platform-label {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 36px; /* Увеличенный размер шрифта */
+            margin-bottom: 10px;
+            margin-left: -650px; /* Сдвиг вправо */
+        }
+
+        .platform-label-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .platform-label-container img {
+            margin-left: 20px; /* Отступ между текстом и изображением */
+            width: 300px; /* Увеличенный размер картинки */
+            height: auto;
+        }
+
+        .recommendations-label {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 27px; /* Уменьшенный размер шрифта */
+            margin-bottom: 10px;
+            text-align: left;
+            color: pink; /* Розовый цвет */
+            position: absolute; /* Абсолютное позиционирование */
+            left: 30px; /* Сдвиг влево */
+        }
+
+        .collaboration h3 {
+            font-size: 22px; /* Увеличенный размер шрифта */
+            margin-left: 10px; /* Сдвиг вправо */
+            color: pink; /* Розовый цвет */
+        }
+
+       .collaboration img {
+    position: relative;
+    left: -10px; /* Сдвиг влево */
+    margin-top: 5px; /* Поднять вверх */
+    width: 250px; /* Увеличенный размер картинки */
+    height: auto;
+
+        }
+
+        .testing h3, .testing p {
+            color: pink; /* Розовый цвет */
+            font-size: 20px; /* Увеличенный размер шрифта */
+        }
+
+        /* Стиль для ссылки "Виртуальные лаборатории" */
+        footer h3 a {
+            color: #fff; /* Белый цвет */
+            text-decoration: none; /* Убрать подчеркивание */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">VirtualLabsSTEM</a></li>
+                    <li><a href="2.html">О проекте</a></li>
+                    <li><a href="3.html">STEM</a></li>
+                    <li><a href="4.html">Для учителей</a></li>
+                    <li><a href="#">Для учеников</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h2><u>Рекомендации для учеников по использованию виртуальных лабораторий</u></h2>
+            <div class="footer-container">
+                <p class="shift-right large-font"><strong><em>1. Ознакомьтесь с платформой</em></strong></p>
+                <footer>
+                    <h3><a href="file:///E:/VirtualLabsSTEM/6.html">Виртуальные лаборатории</a></h3>
+                </footer>
+            </div>
+            <div class="platforms">
+                <div>
+
+                </div>
+                <div class="platform-label-container">
+                    <p class="platform-label" style="font-size: 25px;">2. Подготовьтесь теоретически</p>
+                    <a href="https://onlinemektep.org/login" target="_blank">
+                        <img src="images/онлайн.jpg" alt="онлайн">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="recommendations">
+                <p class="recommendations-label" style="font-size: 27px; color: pink;">3. Экспериментируйте и исследуйте</p>
+                <ul>
+                    <li>
+                        <a href="https://phet.colorado.edu/" target="_blank">
+                            <img src="images/phet.png" alt="PHET">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://physion.net/" target="_blank">
+                            <img src="images/physics.png" alt="Физика">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scratch.mit.edu/" target="_blank">
+                            <img src="images/scratch.png" alt="Scratch">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tinkercad.com/" target="_blank">
+                            <img src="images/tinkercad.png" alt="TinkerCAD">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-block">
+                <h3><em>4. Работайте в группе:</em> Работа в группе может значительно повысить эффективность и качество выполнения задач.</h3>
+                <img src="images/group.jpg" alt="Группа">
+            </div>
+
+            <div class="collaboration">
+                <h3><em>5. Получайте обратную связь:Для получения обратной связи с учителем через приложение можно отправить сообщение в чате.</em> </h3>
+                <a href="https://kundelik.kz/userfeed" target="_blank">
+                    <img src="images/feedback.jpg" alt="Обратная связь">
+                </a>
+            </div>
+
+            <div class="testing">
+                <h3><em>6. Если хочешь больше знаний изучи <span style="color: blue;">S</span><span style="color: red;">T</span><span style="color: orange;">E</span><span style="color: purple;">M</span>:Изучение <span style="color: blue;">S</span><span style="color: red;">T</span><span style="color: orange;">E</span><span style="color: purple;">M</span> (наука, технология, инженерия и математика) открывает множество возможностей для учеников. Рекомендуется развивать любознательность, участвовать в проектах и конкурсах, использовать онлайн-ресурсы и практиковать критическое мышление. <span style="color: blue;">S</span><span style="color: red;">T</span><span style="color: orange;">E</span><span style="color: purple;">M</span>-образование предоставляет прекрасные карьерные перспективы, способствует личностному развитию и позволяет вносить вклад в решение глобальных проблем.
+</em></h3>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

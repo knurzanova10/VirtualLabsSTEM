@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualLabsSTEM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b3a52;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header-container {
+            background-color: #41a9f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 80px;
+        }
+        .header-title {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .nav-container {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 200px;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px; /* Увеличенный размер текста */
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #193441;
+            padding: 40px 0;
+            min-height: 400px;
+            flex-grow: 1;
+        }
+        .container img {
+            margin: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #41a9f2;
+            text-align: center;
+            color: white;
+            padding: 15px 0;
+            font-size: 28px; /* Увеличенный размер текста */
+            font-style: italic; /* Курсивный шрифт */
+            font-weight: bold; /* Жирный шрифт */
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .container img {
+                max-width: 80%;
+            }
+        }
+        @media (max-width: 480px) {
+            .container img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header-title">
+            VirtualLabsSTEM
+        </div>
+        <div class="nav-container">
+            <div class="nav">
+                <a href="2.html">о проекте</a>
+                <a href="3.html">STEM</a>
+                <a href="4.html">для учителей</a>
+                <a href="5.html">для учеников</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/phet.png" alt="PHET" usemap="#phet-map">
+        <img src="images/physics.png" alt="Физика" usemap="#physics-map">
+        <img src="images/scratch.png" alt="Scratch" usemap="#scratch-map">
+        <img src="images/tinkercad.png" alt="TinkerCAD" usemap="#tinkercad-map">
+    </div>
+
+    <div class="footer">
+        <a href="6.html" style="color: white; text-decoration: none;">Виртуальные лаборатории</a>
+    </div>
+
+    <map name="phet-map">
+        <!-- Определение кликабельной области для PHET -->
+        <area shape="rect" coords="0,0,200,200" alt="PHET" href="https://phet.colorado.edu/" target="_blank">
+    </map>
+
+    <map name="physics-map">
+        <!-- Определение кликабельной области для Физика -->
+        <area shape="rect" coords="0,0,200,200" alt="Физика" href="http://physion.net/" target="_blank">
+    </map>
+
+    <map name="scratch-map">
+        <!-- Определение кликабельной области для Scratch -->
+        <area shape="rect" coords="0,0,200,200" alt="Scratch" href="https://scratch.mit.edu/" target="_blank">
+    </map>
+
+    <map name="tinkercad-map">
+        <!-- Определение кликабельной области для TinkerCAD -->
+        <area shape="rect" coords="0,0,200,200" alt="TinkerCAD" href="https://www.tinkercad.com/" target="_blank">
+    </map>
+</body>
+</html>
